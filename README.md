@@ -10,7 +10,7 @@ KSA의 [학사일정](https://ksa.hs.kr/SchoolEvent/Index/135?year=2018&month=7)
 - request
 
 
-### [Google 캘린더](https://calendar.google.com/calendar/r/settings/calendar/YTIwZTc5a2dyOHVrbmxxdGw4dDUxZGU2cThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ])
+### [Google 캘린더](https://calendar.google.com/calendar/embed?src=a20e79kgr8uknlqtl8t51de6q8%40group.calendar.google.com&ctz=Asia%2FSeoul))
 
 공유가 되는 형식의 캘린더를 구상하고 있습니다. 아직은 수정 권한을 어떻게 분배할 지는 고려중에 있습니다.
 
