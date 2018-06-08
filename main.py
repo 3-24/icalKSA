@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-import icalendar
+
 from icalendar import Calendar, Event
 from datetime import datetime
 import requests, urllib2,sys
@@ -49,9 +49,6 @@ def get_data(url):
                         and not (s == '교무회의' or s == '담임협의회'):
                         des = s
                         list.append([date,des])
-                    else:
-                        print s
-                        print date
                 else: date = s
     return list
 

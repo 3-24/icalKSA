@@ -1,5 +1,6 @@
 # icalKSA
 
+<div style="text-align:center"><img src ='/google_calendar.PNG' /> <br>Google Calendar에서 연 ical 파일</div><br>
 main.py는 KSA의 [학사일정](https://ksa.hs.kr/SchoolEvent/Index/135)을 긁어서 KSA.ical 파일로 저장합니다(Python 2.7 기반).
 
 사용되는 파이썬 라이브러리 목록은 다음과 같습니다:
@@ -10,7 +11,7 @@ main.py는 KSA의 [학사일정](https://ksa.hs.kr/SchoolEvent/Index/135)을 긁
 - request
 
 **창의설계활동, 연구방법기초세미나, R&E, 졸업연구, 교무회의, 담임협의회, ~주차**
-는 학사 일정에 포함되어있으나 매 주마다 반복되어 임의로 제거했습니다.
+는 학사일정에 포함되어있으나 매 주마다 반복되어 임의로 제거했습니다.
 
 ### Google 캘린더
 
