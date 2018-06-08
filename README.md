@@ -1,5 +1,5 @@
 # icalKSA
-<div style="text-align:center"><img src ='https://github.com/3-24/icalKSA/google_calendar.PNG' /></div><br>
+<div style="text-align:center"><img src ='/google_calendar.PNG' /></div><br>
 
 main.py는 KSA의 [학사일정](https://ksa.hs.kr/SchoolEvent/Index/135)을 긁어서 KSA.ical 파일로 저장합니다(Python 2.7 기반).
 
