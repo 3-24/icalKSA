@@ -12,4 +12,4 @@ KSA의 [학사일정](https://ksa.hs.kr/SchoolEvent/Index/135?year=2018&month=7)
 
 ### Google 캘린더
 
-[내 캘린더에 추가](https://calendar.google.com/calendar?cid=YTIwZTc5a2dyOHVrbmxxdGw4dDUxZGU2cThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
+[내 캘린더에 추가](https://calendar.google.com/calendar?cid=ZnI5bDcxMTBuY2xkZjhjYTZrZXBoczNnZ2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
