@@ -12,4 +12,4 @@ main.py는 KSA의 [학사일정](https://ksa.hs.kr/SchoolEvent/Index/135)을 긁
 
 ### Google 캘린더
 
-[Google 캘린더에 추가](https://calendar.google.com/calendar?cid=ZnI5bDcxMTBuY2xkZjhjYTZrZXBoczNnZ2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
+[Google 캘린더에 추가](https://calendar.google.com/calendar?cid=ZnI5bDcxMTBuY2xkZjhjYTZrZXBoczNnZ2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) (Last Updated: 2018.06.08)
