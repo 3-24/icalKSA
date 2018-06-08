@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 import icalendar
 from icalendar import Calendar, Event
 from datetime import datetime
@@ -38,8 +39,19 @@ def get_data(url):
             s = splitpart[i]
             if s != '':
                 if not (len(s) == 13 and s[4] == '-' and s[7] == '-'):
-                    des = s
-                    list.append([date,des])
+                    if (ord(s[0])==42):
+                        s = s[1:]
+                    if (ord(s[0]) == 9675):
+                        s = s[2:]
+                    if not ((s[0:4] == '졸업연구' or s[0:3] == 'R&E' \
+                        or s[0:9] == '연구방법기초세미나' or s[0:6] == '창의설계활동') \
+                        and (s[-1] == ')' and (s[-3] == '(') or s[-4] == '(')) and not (s[-2]+s[-1] == '주차') \
+                        and not (s == '교무회의' or s == '담임협의회'):
+                        des = s
+                        list.append([date,des])
+                    else:
+                        print s
+                        print date
                 else: date = s
     return list
 
@@ -61,9 +73,10 @@ def mainParse(year):
             month = L[j][0][5:7]
             date = L[j][0][8:10]
             maintime = str(year)+str(month)+str(date)
-            if ord(L[j][1][0]) == 42 or ord(L[j][1][0]) == 9675: #asterisk and circle unicodes
-                desc = L[j][1][1:]
-            else: desc = L[j][1]
+            #if ord(L[j][1][0]) == 42 or ord(L[j][1][0]) == 9675: #asterisk and circle unicodes
+                #desc = L[j][1][1:]
+            #else:
+            desc = L[j][1]
             addEvent(desc,maintime,maintime)
             number +=1
 
