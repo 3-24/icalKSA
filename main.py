@@ -1,31 +1,16 @@
-#-*- coding: utf-8 -*-
-
 from icalendar import Calendar, Event
-from datetime import datetime
-import requests, urllib2,sys
+import urllib.request
 from bs4 import BeautifulSoup
 
-reload(sys)
-sys.setdefaultencoding('utf-8') # for hangul
 
 def get_html(url):
-    hdr = {
-        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
-        'Accept-Encoding': 'none',
-        'Accept-Language': 'en-US,en;q=0.8',
-        'Connection': 'keep-alive'}
+    fp = urllib.request.urlopen(url)
+    mybytes = fp.read()
 
-    req = urllib2.Request(url, headers=hdr)
+    mystr = mybytes.decode("utf8")
+    fp.close()
+    return mystr
 
-    try:
-        page = urllib2.urlopen(req)
-    except urllib2.HTTPError, e:
-        print e.fp.read()
-
-    content = page.read()
-    return content
 
 def get_data(url):
     list = []
@@ -70,9 +55,6 @@ def mainParse(year):
             month = L[j][0][5:7]
             date = L[j][0][8:10]
             maintime = str(year)+str(month)+str(date)
-            #if ord(L[j][1][0]) == 42 or ord(L[j][1][0]) == 9675: #asterisk and circle unicodes
-                #desc = L[j][1][1:]
-            #else:
             desc = L[j][1]
             addEvent(desc,maintime,maintime)
             number +=1
@@ -80,6 +62,6 @@ def mainParse(year):
     f = open('KSA.ics', 'wb')
     f.write(cal.to_ical())
     f.close()
-    print number
+    print(number)
 
 mainParse(2018)
