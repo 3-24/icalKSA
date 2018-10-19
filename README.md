@@ -1,3 +1,5 @@
+[3-24.github.io/icalKSA](3-24.github.io/icalKSA)
+
 # icalKSA
 
 main.py는 KSA의 [학사일정](https://ksa.hs.kr/SchoolEvent/Index/135)을 긁어서 KSA.ical 파일로 저장합니다(Python 3 기반).
